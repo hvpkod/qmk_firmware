@@ -8,5 +8,6 @@ enum tapdance_id
   TD2,
   TD3,
   TD4,
-  TD5
+  TD5,
+  TD6
 };
