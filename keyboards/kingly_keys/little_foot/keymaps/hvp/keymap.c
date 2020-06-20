@@ -13,17 +13,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_split_space_base(
     KC_1,   KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,             KC_0,
     KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,             KC_P,
-    KC_A,   KC_S,    KC_D,     LT(3,KC_F),    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,      KC_SCLN,
-    KC_Z,   KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,         TD(TD3),
-                LT(1,KC_BSPC), MT(MOD_LSFT, KC_SPACE), CTL_T(KC_SPACE),  LT(2, KC_ENT)
+    LSFT_T(KC_A),   KC_S,    KC_D,     LT(3,KC_F),    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,      KC_SCLN,
+    CTL_T(KC_Z),   KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,         TD(TD3),
+                CTL_T(KC_BSPC), LT(1,KC_BSPC), MT(MOD_LSFT, KC_SPACE),  LT(2, KC_ENT)
   ),
 
   [1] = LAYOUT_split_space_base(
     LT(2, KC_ESC), _______, _______, _______, _______, _______, _______,  _______, KC_MINS, KC_BSPC,
     KC_TAB,  _______, _______, _______, _______, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS,
-    KC_LSFT, _______, _______, _______, _______,KC_UNDERSCORE, KC_PLUS, KC_LEFT_CURLY_BRACE, KC_RIGHT_CURLY_BRACE, KC_QUOT,
-    _______, _______, _______, _______, _______, _______, _______,   LSFT(KC_9), LSFT(KC_0), _______,
-                  _______,            _______,        KC_LALT,              KC_LCTRL
+    KC_SFTENT, _______, _______, _______, _______,KC_UNDERSCORE, KC_PLUS, KC_LEFT_CURLY_BRACE, KC_RIGHT_CURLY_BRACE, KC_QUOT,
+    KC_LCPO, _______, _______, _______, _______, _______, _______,   LSFT(KC_9), LSFT(KC_0), _______,
+                  _______,            _______,        KC_LALT,              KC_LGUI
   ), 
 
   [2] = LAYOUT_split_space_base(
@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_F4,   KC_F5,  KC_F6, _______,  _______,  _______,  _______,  KC_4, KC_5, KC_6,
       KC_F7,   KC_F8,  KC_F9, _______,  _______,  _______,  _______,  KC_1, KC_2, KC_3,
       KC_F10,  KC_F11, KC_F12, _______, _______,  _______,  _______,  _______,  KC_0, _______,
-                  _______,             _______,          KC_LGUI,                _______
+                  _______,             _______,          _______,                _______
   ),
 
   [3] = LAYOUT_split_space_base(
